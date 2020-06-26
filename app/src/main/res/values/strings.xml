@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Black</string>
+    <string name="tv_welcome_text">This a black market rates prediction tool. It was developed by George Anaphy C16127597T and Ardon Uche Uche C16127388P As their final Year project for the Bachelor\'s Degree Honour in Informtion Technology at the Chinhoyi University of Technology. This tool will predict the black Market rate after providing values such as Infletion rate, fuel price e.t.c. Go on, Sign In. If you don\'t have an account SignUp.</string>
+    <string name="btn_sign_in_text">Sign in</string>
+    <string name="btn_sign_up_text">Sign up</string>
+    <string name="txt_username_text">username</string>
+    <string name="txt_password_text">password</string>
+    <string name="btn_submit_text">submit</string>
+    <string name="txt_prediction_label_text">Predicted value</string>
+    <string name="txt_prediction_value_text">9.4333333333</string>
+</resources>
