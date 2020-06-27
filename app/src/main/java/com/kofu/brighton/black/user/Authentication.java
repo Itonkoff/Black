@@ -1,8 +1,7 @@
-package com.kofu.brighton.black.User;
+package com.kofu.brighton.black.user;
 
 public class Authentication {
     private static Authentication instance;
-    private Token token ;
     private Credentials user;
 
     private Authentication() {
@@ -14,14 +13,6 @@ public class Authentication {
 
     public void setUser(Credentials user) {
         this.user = user;
-    }
-
-    public void setToken(String token) {
-        this.token = new Token(token);
-    }
-
-    public String getToken() {
-        return token.toString();
     }
 
     public static Authentication getInstance(){

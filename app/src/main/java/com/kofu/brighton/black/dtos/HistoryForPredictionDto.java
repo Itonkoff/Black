@@ -1,10 +1,6 @@
-package com.kofu.brighton.black.Market;
+package com.kofu.brighton.black.dtos;
 
-import java.util.Date;
-
-public class History {
-    int id;
-    Date date;
+public class HistoryForPredictionDto {
     double interest_rate;
     double inflation_rate;
     double gvt_expenditure;
@@ -14,5 +10,4 @@ public class History {
     double petrol_price;
     double civil_servants;
     double predicted_value;
-
 }

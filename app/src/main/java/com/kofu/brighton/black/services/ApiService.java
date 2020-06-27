@@ -1,8 +1,9 @@
-package com.kofu.brighton.black.Api;
+package com.kofu.brighton.black.services;
 
-import com.kofu.brighton.black.Market.History;
-import com.kofu.brighton.black.User.Authentication;
-import com.kofu.brighton.black.User.Credentials;
+import com.kofu.brighton.black.dtos.AuthenticationDto;
+import com.kofu.brighton.black.dtos.UserLoginDto;
+import com.kofu.brighton.black.market.History;
+import com.kofu.brighton.black.user.Credentials;
 
 import java.util.List;
 
@@ -13,12 +14,16 @@ import retrofit2.http.Header;
 import retrofit2.http.Headers;
 import retrofit2.http.POST;
 
-public interface IApi {
+public interface ApiService {
+    @Headers({
+            "Accept: application/json",
+            "Content-Type: application/json"
+    })
     @POST("/accounts/token/login")
-    Call login(@Body Credentials credentials);
+    Call<AuthenticationDto> login(@Body UserLoginDto credentials);
 
     @POST("/accounts/token/logout")
-    Call logOut(@Body Credentials credentials);
+    Call<String> logOut(@Body Credentials credentials);
 
     @GET("market/history")
     Call<List<History>> getAllHistory();
