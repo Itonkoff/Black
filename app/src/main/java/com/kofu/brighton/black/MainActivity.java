@@ -32,9 +32,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        SharedPreferences sharedPref =
-                MainActivity.this
-                        .getSharedPreferences(getString(R.string.shared_pref), Context.MODE_PRIVATE);
+        SharedPreferences sharedPref = getSharedPreferences(getString(R.string.shared_pref), Context.MODE_PRIVATE);
+//        SharedPreferences sharedPref =
+//                MainActivity.this
+//                        .Preferences(getString(R.string.shared_pref), Context.MODE_PRIVATE);
         editor = sharedPref.edit();
 
         String token = sharedPref.getString(getString(R.string.token_key), "");
@@ -84,6 +85,8 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(MainActivity.this, response.body().auth_token, Toast.LENGTH_LONG).show();
                     editor.putString(getString(R.string.token_key), response.body().auth_token);
                     editor.putString(getString(R.string.user_key), user.username);
+                    editor.putString(getString(R.string.txt_password_key),user.password);
+                    editor.commit();
                     proceed();
                 } else {
                     Toast.makeText(

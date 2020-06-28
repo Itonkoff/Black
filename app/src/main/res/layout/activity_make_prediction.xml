@@ -20,14 +20,16 @@
             android:layout_height="wrap_content">
 
             <Button
-                android:id="@+id/button2"
+                android:id="@+id/btn_submit"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="24dp"
+                android:layout_marginBottom="32dp"
                 android:layout_weight="1"
                 android:backgroundTint="@color/colorPrimaryDark"
                 android:text="Submit"
                 android:textColor="@color/cardview_light_background"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="@+id/textInputLayout14"
                 app:layout_constraintStart_toStartOf="@+id/textInputLayout14"
                 app:layout_constraintTop_toBottomOf="@+id/textInputLayout14" />
@@ -51,17 +53,19 @@
                 android:id="@+id/textInputLayout"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
+                android:layout_marginStart="16dp"
                 android:layout_marginTop="32dp"
-                android:layout_marginEnd="8dp"
+                android:layout_marginEnd="16dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView20">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/te_intrest"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Intrest rate"
+                    android:inputType="numberDecimal"
                     android:textColor="@color/colorPrimaryDark" />
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -75,9 +79,11 @@
                 app:layout_constraintTop_toBottomOf="@+id/textInputLayout">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/te_inflation"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Inflation rate"
+                    android:inputType="numberDecimal"
                     android:textColor="@color/colorPrimaryDark" />
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -91,9 +97,11 @@
                 app:layout_constraintTop_toBottomOf="@+id/textInputLayout5">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/te_gvt"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Gvt expenditure"
+                    android:inputType="numberDecimal"
                     android:textColor="@color/colorPrimaryDark" />
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -107,9 +115,11 @@
                 app:layout_constraintTop_toBottomOf="@+id/textInputLayout7">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/te_wheat"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Wheat price"
+                    android:inputType="numberDecimal"
                     android:textColor="@color/colorPrimaryDark" />
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -123,9 +133,11 @@
                 app:layout_constraintTop_toBottomOf="@+id/textInputLayout9">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/te_bread"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Bread price"
+                    android:inputType="numberDecimal"
                     android:textColor="@color/colorPrimaryDark" />
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -139,9 +151,11 @@
                 app:layout_constraintTop_toBottomOf="@+id/textInputLayout10">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/te_diesel"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Price of diesel"
+                    android:inputType="numberDecimal"
                     android:textColor="@color/colorPrimaryDark" />
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -155,9 +169,11 @@
                 app:layout_constraintTop_toBottomOf="@+id/textInputLayout11">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/te_petrol"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Price of petrol"
+                    android:inputType="numberDecimal"
                     android:textColor="@color/colorPrimaryDark" />
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -171,9 +187,11 @@
                 app:layout_constraintTop_toBottomOf="@+id/textInputLayout12">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/te_civil"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Civil servants pay"
+                    android:inputType="numberDecimal"
                     android:textColor="@color/colorPrimaryDark" />
 
             </com.google.android.material.textfield.TextInputLayout>
