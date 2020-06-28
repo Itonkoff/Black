@@ -1,13 +1,12 @@
 package com.kofu.brighton.black;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.TextView;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.kofu.brighton.black.dtos.HistoryDto;
-import com.kofu.brighton.black.market.History;
 
 public class PredictionActivity extends AppCompatActivity {
 

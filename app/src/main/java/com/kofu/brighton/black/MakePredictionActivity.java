@@ -1,20 +1,18 @@
 package com.kofu.brighton.black;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.os.Parcelable;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.google.android.material.textfield.TextInputEditText;
 import com.kofu.brighton.black.dtos.HistoryDto;
 import com.kofu.brighton.black.dtos.HistoryForPredictionDto;
-import com.kofu.brighton.black.market.History;
 import com.kofu.brighton.black.services.APIServiceBuilder;
 import com.kofu.brighton.black.services.ApiService;
 
